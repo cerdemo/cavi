@@ -1,0 +1,4 @@
+---VERSION 3b---
+. Chain delay stereo to mono
+. Mod Delay LFOs
+. EFX Sends rearrangement
