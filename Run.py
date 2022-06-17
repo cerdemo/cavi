@@ -11,7 +11,8 @@ from myo import *
 import numpy as np
 import datetime
 import time
-import os, sys
+import os
+import sys
 from queue import Queue
 from threading import Thread
 from pythonosc import osc_message_builder
@@ -39,7 +40,8 @@ INPUT_PORT = 5660
 INPUT_IP = "127.0.0.1"
 osc_client = udp_client.SimpleUDPClient("localhost", OUTPUT_PORT)
 # MYO
-TTY = [f for f in os.listdir("/dev") if f.startswith("tty.usbmodem")]  # only for mac
+TTY = [f for f in os.listdir(
+    "/dev") if f.startswith("tty.usbmodem")]  # only for mac
 print(TTY)
 # MAC = ["d0:8d:fc:7f:f5:f1", "d9:db:d4:2b:d4:17"]
 MYOs = {
@@ -77,7 +79,8 @@ models = {
         "Coadaptive-20201122-23_18_25-64-5-7-300-100-1-1-256-0_5-1e-05.h5",  # 2-64
         "Coadaptive-20201206-00_22_10-32-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-32 ---Usable!
         "Coadaptive-20201206-15_41_52-64-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-64
-        "Coadaptive-20201207-15_41_13-32-5-7-300-50-1-1-2048-0_2-1e-05.h5",  # 2-32 stateful ---Usable!
+        # 2-32 stateful ---Usable!
+        "Coadaptive-20201207-15_41_13-32-5-7-300-50-1-1-2048-0_2-1e-05.h5",
         "Coadaptive-20201207-11_29_34-64-5-7-300-50-1-1-1024-0_2-1e-05.h5",  # 2-64
     ],
     "raw_ds_r": [
@@ -86,7 +89,8 @@ models = {
         "Coadaptive-20201208-15_00_26-32-5-7-300-50-1-1-512-0_2-1e-05.h5",  # 2-32 stateless
     ],
     "proc": [
-        "Coadaptive-20201212-02_23_14-32-5-7-70-50-1-1-256-0_2-1e-05.h5",  # 2-32 (only impros)
+        # 2-32 (only impros)
+        "Coadaptive-20201212-02_23_14-32-5-7-70-50-1-1-256-0_2-1e-05.h5",
         "Coadaptive-20201212-02_19_58-32-5-7-300-50-1-1-512-0_2-1e-05.h5",  # 2-32
         "Coadaptive-20201212-02_28_46-32-64-5-7-300-50-1-1-512-0_2-1e-05.h5",  # 2-16_32
     ],
@@ -94,9 +98,12 @@ models = {
         "Coadaptive-20201212-15_49_26-32-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-32
         "Coadaptive-20201212-15_52_06-64-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-64
         "Coadaptive-20201212-15_59_12-32-64-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-32_64 --Best!
-        "Coadaptive-20201213-00_21_06-32-64-5-7-70-50-1-1-64-0_2-1e-05.h5",  # 2-32_64 (only impros)
-        "Coadaptive-20201213-00_18_04-32-5-7-70-50-1-1-64-0_2-1e-05.h5",  # 2-32 (only impros)
-        "Coadaptive-20201213-00_18_46-64-5-7-300-100-1-1-128-0_2-1e-05.h5",  # 2-64 (seq100) --Usable!
+        # 2-32_64 (only impros)
+        "Coadaptive-20201213-00_21_06-32-64-5-7-70-50-1-1-64-0_2-1e-05.h5",
+        # 2-32 (only impros)
+        "Coadaptive-20201213-00_18_04-32-5-7-70-50-1-1-64-0_2-1e-05.h5",
+        # 2-64 (seq100) --Usable!
+        "Coadaptive-20201213-00_18_46-64-5-7-300-100-1-1-128-0_2-1e-05.h5",
         # w/ updated dataloader: (the rest above is essentially useless...)
         "Coadaptive-20201213-20_47_20-32-32-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-32 --Best!!!
         "Coadaptive-20201213-20_43_08-32-64-5-7-300-50-1-1-256-0_2-1e-05.h5",  # 2-32_64
@@ -106,20 +113,32 @@ models = {
     "proc_ds_single": [
         "Coadaptive-ACC-20201218-13_17_43-32-32-5-3-300-50-1-1-128-0_2-1e-05.h5",  # 2-32 only ACC
         "Coadaptive-EMG-20201218-13_15_57-32-32-5-4-300-50-1-1-128-0_2-1e-05.h5",  # 2-32 only EMG
-        "Coadaptive-mixedACC-20201221-23_42_52-32-32-5-3-462-50-1-1-512-0_2-1e-05.h5",  # 2-32 only ACC (mixed w dance)
+        # 2-32 only ACC (mixed w dance)
+        "Coadaptive-mixedACC-20201221-23_42_52-32-32-5-3-462-50-1-1-512-0_2-1e-05.h5",
     ],
     "newest": [
-        "Coadaptive-20210308-20_52_11-64-64-3-7-300-200-1-1-512-0_3-1e-05.h5",  # 2-64, seq:200, 3 mixtures
-        "Coadaptive-20210309-12_07_03-64-64-5-7-300-200-1-1-512-0_3-1e-05.h5",  # 2-64, seq:200, 5 mixtures
-        "Coadaptive-20210329-18_19_51-64-32-3-7-300-200-1-1-256-0_2-1e-05.h5",  # 2-64_32, seq:200, 3 mixtures
-        "Coadaptive-20210312-11_06_25-32-32-5-7-300-100-1-1-512-0_2-1e-05.h5",  # LEFT, 2-32, seq:100
-        "Coadaptive-20210312-14_59_26-64-32-5-7-300-100-1-1-128-0_2-1e-05.h5",  # LEFT, 2-64_32, seq:100
-        "Coadaptive-LHAND-20210314-13_24_39-64-32-3-7-300-200-1-1-256-0_3-1e-05.h5",  # LEFT, 2-64_32, seq:200, 3 mixtures (looks ok!)
-        "Coadaptive-LHAND-20210318-13_48_20-32-32-3-7-300-200-1-1-256-0_3-1e-05.h5",  # LEFT, 2-32, seq:200, 3 mixtures
-        "Coadaptive-LHAND-20210316-13_10_03-32-64-3-7-300-200-1-1-256-0_3-1e-05.h5",  # LEFT, 2-32_64, seq:200, 3 mixtures
-        "Coadaptive-20210401-14_48_38-32-32-3-7-300-200-1-1-256-0_1-1e-05.h5",  # 2-32, seq:200, 3 mixtures
-        "Coadaptive-20210329-18_19_51-64-32-3-7-300-200-1-1-256-0_2-1e-05-1.h5",  # 2-64_32, seq:200, 3 mixtures, lower dropout
-        "Coadaptive-20210404-13_27_57-64-64-5-7-300-200-1-1-256-0_1-1e-05.h5",  # 2-64, seq:200, 5 mixtures (looks ok!)
+        # 2-64, seq:200, 3 mixtures
+        "Coadaptive-20210308-20_52_11-64-64-3-7-300-200-1-1-512-0_3-1e-05.h5",
+        # 2-64, seq:200, 5 mixtures
+        "Coadaptive-20210309-12_07_03-64-64-5-7-300-200-1-1-512-0_3-1e-05.h5",
+        # 2-64_32, seq:200, 3 mixtures
+        "Coadaptive-20210329-18_19_51-64-32-3-7-300-200-1-1-256-0_2-1e-05.h5",
+        # LEFT, 2-32, seq:100
+        "Coadaptive-20210312-11_06_25-32-32-5-7-300-100-1-1-512-0_2-1e-05.h5",
+        # LEFT, 2-64_32, seq:100
+        "Coadaptive-20210312-14_59_26-64-32-5-7-300-100-1-1-128-0_2-1e-05.h5",
+        # LEFT, 2-64_32, seq:200, 3 mixtures (looks ok!)
+        "Coadaptive-LHAND-20210314-13_24_39-64-32-3-7-300-200-1-1-256-0_3-1e-05.h5",
+        # LEFT, 2-32, seq:200, 3 mixtures
+        "Coadaptive-LHAND-20210318-13_48_20-32-32-3-7-300-200-1-1-256-0_3-1e-05.h5",
+        # LEFT, 2-32_64, seq:200, 3 mixtures
+        "Coadaptive-LHAND-20210316-13_10_03-32-64-3-7-300-200-1-1-256-0_3-1e-05.h5",
+        # 2-32, seq:200, 3 mixtures
+        "Coadaptive-20210401-14_48_38-32-32-3-7-300-200-1-1-256-0_1-1e-05.h5",
+        # 2-64_32, seq:200, 3 mixtures, lower dropout
+        "Coadaptive-20210329-18_19_51-64-32-3-7-300-200-1-1-256-0_2-1e-05-1.h5",
+        # 2-64, seq:200, 5 mixtures (looks ok!)
+        "Coadaptive-20210404-13_27_57-64-64-5-7-300-200-1-1-256-0_1-1e-05.h5",
     ],
 }
 
@@ -131,20 +150,23 @@ SCALE = 1.0
 PI = 0.7  # 0.8 before
 SIGMA = 0.01
 SEQ_LEN = 200  # 50 –> 5 sec
-_LIMIT = 1  # How many sequences will be concatenated (buffered) before streaming (5 if upsampling)
-BPM = 600  # 50 Hz (3000) is optimum for continuity or 10 Hz (600) no upsampling
+# How many sequences will be concatenated (buffered) before streaming (5 if upsampling)
+_LIMIT = 1
+# 50 Hz (3000) is optimum for continuity or 10 Hz (600) no upsampling
+BPM = 600
 UPSAMPLE = False
 _FS = 50  # sr
 
 INPUT_DIMS = 7
 HIDDEN_UNITS1 = 32
-HIDDEN_UNITS2 = HIDDEN_UNITS1 #// 2
+HIDDEN_UNITS2 = HIDDEN_UNITS1  # // 2
 OUTPUT_DIMS = 7
 N_MIXES = 5
 STATE = True
 res_states = False  # reset the model states before prediction
 SEQ_BASED = True
-NUM_STEPS = 250  # // 2  # for sampling from the mixture distributions (500 looks good, 300 for seq200 but min 125 for seq50)
+# // 2  # for sampling from the mixture distributions (500 looks good, 300 for seq200 but min 125 for seq50)
+NUM_STEPS = 250
 # Preprocessing
 RECTIFY = True
 NORM = False
@@ -155,6 +177,8 @@ MAVG = True
 ################################################
 ############## HELPER FUNCTIONS ################
 ################################################
+
+
 def rms_of(x, window_length, hop_length, df=False):
     """Clculate moving root-mean-square (RMS),
     also downsamples depending on the chosen window size."""
@@ -164,7 +188,7 @@ def rms_of(x, window_length, hop_length, df=False):
     for ax in x.T:
         energy = np.array(
             [
-                np.sum((ax[i : i + window_length] ** 2))
+                np.sum((ax[i: i + window_length] ** 2))
                 for i in range(0, len(ax), hop_length)
             ]
         )
@@ -314,7 +338,8 @@ def proc_emg(index):
             emg_data[_MYO[2]],
             emg_data[_MYO[3]],
         )
-        osc_client.send_message(address, proc_emg_data)  # Send OSC the true EMG
+        # Send OSC the true EMG
+        osc_client.send_message(address, proc_emg_data)
         # Calculate the moving RMS and downsample to 10 Hz
         emg_buffer.append(proc_emg_data)
         if len(emg_buffer) == emg_buffer_len:
@@ -365,9 +390,11 @@ def proc_imu(index):
 
 
 def init_myo(index, time):
-    m = Myo(adapter=BT(tty="/dev/" + TTY[index], baudrate=115200), start_time=time)
+    m = Myo(adapter=BT(tty="/dev/" +
+                       TTY[index], baudrate=115200), start_time=time)
 
-    m.add_emg_handler(proc_emg(index))  # comment out these 2 lines when not using OSC
+    # comment out these 2 lines when not using OSC
+    m.add_emg_handler(proc_emg(index))
     m.add_imu_handler(proc_imu(index))
 
     # m.connect(address=MAC[index])
@@ -423,7 +450,8 @@ def NN(model_name, state=STATE, input_len=SEQ_LEN):
         )
     )
     decoder.add(
-        keras.layers.LSTM(HIDDEN_UNITS2, return_sequences=False, stateful=state)
+        keras.layers.LSTM(
+            HIDDEN_UNITS2, return_sequences=False, stateful=state)
     )
     decoder.add(mdn.MDN(OUTPUT_DIMS, N_MIXES))
     decoder.add(keras.layers.Activation("linear", dtype="float32"))
@@ -655,7 +683,8 @@ prediction_thread = Thread(
 )
 # 3
 print("Starting Stream thread...")
-stream_thread = Thread(target=stream, args=(), name="stream_thread", daemon=True)
+stream_thread = Thread(target=stream, args=(),
+                       name="stream_thread", daemon=True)
 # 4
 print("Starting OSC thread...")
 server_thread = Thread(
@@ -677,4 +706,3 @@ except KeyboardInterrupt:
 finally:
     print("\nCAVI stopped.\n")
 # When the music's over, turn off the lights.
-
