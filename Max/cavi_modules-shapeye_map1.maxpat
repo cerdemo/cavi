@@ -898,7 +898,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 183.0, 391.0, 49.0 ],
-									"text" : "importmovie ~/Desktop/dev/CE_dissertation_files/cavi/Max/Embodiment/ks01.png, bang"
+									"text" : "importmovie ~/Desktop/dev/CE_dissertation_files/cavi/Max/Embodiment/ks06.png, bang"
 								}
 
 							}
@@ -1049,7 +1049,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 1372.0, 2492.0 ],
+						"rect" : [ 92.0, 116.0, 1372.0, 959.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1077,6 +1077,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-92",
@@ -3264,7 +3265,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 94.0, 100.0, 1312.0, 848.0 ],
+						"rect" : [ 94.0, 100.0, 1424.0, 958.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3434,7 +3435,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 648.642294113131356, 0.0, 73.0, 22.0 ],
+									"patching_rect" : [ 709.642294113131356, 64.0, 73.0, 22.0 ],
 									"text" : "s delay_env"
 								}
 
@@ -3457,7 +3458,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 0.0, 26.5, 77.0, 22.0 ],
+									"patching_rect" : [ 7.0, 9.832784184514026, 77.0, 22.0 ],
 									"text" : "s stutter_env"
 								}
 
@@ -3920,7 +3921,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.0, 51.832784184514139, 29.5, 22.0 ],
+									"patching_rect" : [ 122.0, 60.832784184514139, 29.5, 22.0 ],
 									"text" : "0"
 								}
 
@@ -3932,7 +3933,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 104.0, 20.500000000000114, 60.0, 22.0 ],
+									"patching_rect" : [ 180.0, 38.500000000000114, 60.0, 22.0 ],
 									"text" : "r blink_off"
 								}
 
@@ -3944,7 +3945,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 35.0, 20.500000000000114, 61.0, 22.0 ],
+									"patching_rect" : [ 104.0, 16.500000000000114, 61.0, 22.0 ],
 									"text" : "r blink_on"
 								}
 
