@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 45.0, 2492.0, 1361.0 ],
+		"rect" : [ 34.0, 45.0, 1372.0, 821.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,1119 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-1068",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 854.0, 1188.0, 75.0, 22.0 ],
+					"text" : "r stretch_res"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1065",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 922.425000000000182, 1077.937459850798859, 61.0, 22.0 ],
+					"text" : "unjoin 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1066",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 922.425000000000182, 1048.740650808129885, 91.0, 22.0 ],
+					"text" : "r procTrueEMG"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1067",
+					"maxclass" : "newobj",
+					"numinlets" : 6,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 922.425000000000182, 1126.157398808129983, 117.0, 22.0 ],
+					"text" : "scale 0. 1. 0. 100. 4."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1051",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 219.982694017464155, 165.785844705520731, 55.0, 22.0 ],
+					"text" : "r FSexpr"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1058",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 596.0, 2700.0, 70.0, 22.0 ],
+					"text" : "loadmess 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1057",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1314.666705846786499, 2574.666743397712708, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1052",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1713.374479526579307, 1296.656566679477692, 87.383178055286407, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1240.000036954879761, 1235.553587293675264, 87.383178055286407, 20.0 ],
+					"text" : "MAIN (expr)",
+					"textcolor" : [ 0.956862745098039, 0.215686274509804, 0.145098039215686, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1049",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 119.5, 593.125121880790857, 69.0, 22.0 ],
+					"text" : "r FSdryWet"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1048",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1443.661990761756897, 219.718312740325928, 61.0, 22.0 ],
+					"text" : "r FSonset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1042",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1202.816917181015015, 752.112685918807983, 61.0, 22.0 ],
+					"text" : "r FSpres2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1040",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 2101.680583862233107, 339.970604707023767, 61.0, 22.0 ],
+					"text" : "r FSpres1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-280",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 3,
+							"revision" : 1,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 187.0, 79.0, 1082.0, 672.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"visible" : 1,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-54",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 122.056924819946289, 149.999994277954102, 77.0, 22.0 ],
+									"text" : "s stretch_res"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 260.416656732559204, 346.87498676776886, 150.0, 20.0 ],
+									"text" : "TEST"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-51",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patcher" : 									{
+										"fileversion" : 1,
+										"appversion" : 										{
+											"major" : 8,
+											"minor" : 3,
+											"revision" : 1,
+											"architecture" : "x64",
+											"modernui" : 1
+										}
+,
+										"classnamespace" : "box",
+										"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+										"bglocked" : 0,
+										"openinpresentation" : 0,
+										"default_fontsize" : 12.0,
+										"default_fontface" : 0,
+										"default_fontname" : "Arial",
+										"gridonopen" : 1,
+										"gridsize" : [ 15.0, 15.0 ],
+										"gridsnaponopen" : 1,
+										"objectsnaponopen" : 1,
+										"statusbarvisible" : 2,
+										"toolbarvisible" : 1,
+										"lefttoolbarpinned" : 0,
+										"toptoolbarpinned" : 0,
+										"righttoolbarpinned" : 0,
+										"bottomtoolbarpinned" : 0,
+										"toolbars_unpinned_last_save" : 0,
+										"tallnewobj" : 0,
+										"boxanimatetime" : 200,
+										"enablehscroll" : 1,
+										"enablevscroll" : 1,
+										"devicewidth" : 0.0,
+										"description" : "",
+										"digest" : "",
+										"tags" : "",
+										"style" : "",
+										"subpatcher_template" : "",
+										"assistshowspatchername" : 0,
+										"boxes" : [ 											{
+												"box" : 												{
+													"id" : "obj-47",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 50.0, 196.541680455207825, 63.541669964790344, 20.0 ],
+													"text" : "line in"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-46",
+													"maxclass" : "comment",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 151.041662812232971, 100.0, 63.541669964790344, 20.0 ],
+													"text" : "data in"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-43",
+													"maxclass" : "newobj",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "bang", "float" ],
+													"patching_rect" : [ 132.333354949951172, 159.791682124137878, 29.5, 22.0 ],
+													"text" : "t b f"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-34",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 97.958356261253357, 264.083346605300903, 61.0, 22.0 ],
+													"text" : "zl group 3"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-33",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 132.333354949951172, 123.750033617019653, 55.0, 22.0 ],
+													"text" : "zl slice 3"
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"id" : "obj-32",
+													"maxclass" : "newobj",
+													"numinlets" : 2,
+													"numoutlets" : 1,
+													"outlettype" : [ "float" ],
+													"patching_rect" : [ 102.125022768974304, 218.541680455207825, 89.916664361953735, 22.0 ],
+													"text" : "* 0."
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-48",
+													"index" : 1,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 102.125043261253381, 39.999995124137854, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-49",
+													"index" : 2,
+													"maxclass" : "inlet",
+													"numinlets" : 0,
+													"numoutlets" : 1,
+													"outlettype" : [ "" ],
+													"patching_rect" : [ 132.333356261253357, 39.999995124137854, 30.0, 30.0 ]
+												}
+
+											}
+, 											{
+												"box" : 												{
+													"comment" : "",
+													"id" : "obj-50",
+													"index" : 1,
+													"maxclass" : "outlet",
+													"numinlets" : 1,
+													"numoutlets" : 0,
+													"patching_rect" : [ 97.958356261253357, 346.083369124137903, 30.0, 30.0 ]
+												}
+
+											}
+ ],
+										"lines" : [ 											{
+												"patchline" : 												{
+													"destination" : [ "obj-34", 0 ],
+													"source" : [ "obj-32", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-43", 0 ],
+													"source" : [ "obj-33", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-50", 0 ],
+													"source" : [ "obj-34", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-32", 1 ],
+													"source" : [ "obj-43", 1 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-32", 0 ],
+													"source" : [ "obj-43", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-32", 0 ],
+													"source" : [ "obj-48", 0 ]
+												}
+
+											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-33", 0 ],
+													"source" : [ "obj-49", 0 ]
+												}
+
+											}
+ ]
+									}
+,
+									"patching_rect" : [ 88.0, 584.374977832000695, 72.0, 22.0 ],
+									"saved_object_attributes" : 									{
+										"description" : "",
+										"digest" : "",
+										"globalpatchername" : "",
+										"tags" : ""
+									}
+,
+									"text" : "p fadeDATA"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-31",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 122.056924819946289, 613.333333015441895, 345.0, 22.0 ],
+									"text" : "0. 0. 0."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"bgcolor" : [ 0.2, 0.2, 0.2, 0.18 ],
+									"candicane2" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane3" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane4" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane5" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane6" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane7" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candicane8" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"candycane" : 8,
+									"contdata" : 1,
+									"drawpeaks" : 1,
+									"id" : "obj-151",
+									"maxclass" : "multislider",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 88.0, 379.0, 375.0, 194.0 ],
+									"peakcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_invisible" : 1,
+											"parameter_longname" : "multislider[31]",
+											"parameter_shortname" : "multislider[3]",
+											"parameter_type" : 3
+										}
+
+									}
+,
+									"setminmax" : [ 0.0, 1.0 ],
+									"setstyle" : 1,
+									"signed" : 1,
+									"size" : 3,
+									"slidercolor" : [ 0.958527565002441, 0.216987252235413, 0.14356592297554, 1.0 ],
+									"spacing" : 20,
+									"thickness" : 1,
+									"varname" : "multislider[4]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-29",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 138.0, 198.0, 59.0, 22.0 ],
+									"text" : "1, 0 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-28",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 68.0, 198.0, 59.0, 22.0 ],
+									"text" : "0, 1 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "bang" ],
+									"patching_rect" : [ 68.0, 234.0, 40.0, 22.0 ],
+									"text" : "line"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 68.0, 159.056339025497437, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-24",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 568.083337068557739, 213.0, 57.0, 22.0 ],
+									"text" : "s FSexpr"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-23",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 98.0, 268.87500011920929, 52.0, 22.0 ],
+									"text" : "s FSosc"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-20",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 488.848577857017517, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-21",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 457.348577857017517, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-22",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 464.583337068557739, 167.056339025497437, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-19",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 457.348577857017517, 246.0, 63.0, 22.0 ],
+									"text" : "s FSonset"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-13",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 237.113818645477295, 246.0, 63.0, 22.0 ],
+									"text" : "s FSpres1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-14",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 268.613818645477295, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-15",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 237.113818645477295, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "8"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-16",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 244.348577857017517, 167.056339025497437, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 351.348577857017517, 246.0, 63.0, 22.0 ],
+									"text" : "s FSpres2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1039",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 382.848577857017517, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1038",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 351.348577857017517, 211.728067747204022, 29.5, 22.0 ],
+									"text" : "5"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1034",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "bang", "bang", "" ],
+									"patching_rect" : [ 358.583337068557739, 167.056339025497437, 44.0, 22.0 ],
+									"text" : "sel 0 1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-840",
+									"maxclass" : "dial",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "float" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 568.083337068557739, 110.0, 40.0, 40.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "dial",
+											"parameter_shortname" : "dial",
+											"parameter_type" : 0
+										}
+
+									}
+,
+									"varname" : "dial"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-842",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 464.583337068557739, 110.0, 40.0, 40.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_longname" : "toggle[20]",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "toggle[20]",
+											"parameter_type" : 2
+										}
+
+									}
+,
+									"varname" : "toggle[20]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1015",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 358.583337068557739, 110.0, 40.0, 40.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_longname" : "toggle[24]",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "toggle[24]",
+											"parameter_type" : 2
+										}
+
+									}
+,
+									"varname" : "toggle[22]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1019",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 244.348577857017517, 110.0, 40.0, 40.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_longname" : "toggle[25]",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "toggle[25]",
+											"parameter_type" : 2
+										}
+
+									}
+,
+									"varname" : "toggle[24]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1022",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 68.0, 103.0, 40.0, 40.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_enum" : [ "off", "on" ],
+											"parameter_longname" : "toggle[26]",
+											"parameter_mmax" : 1,
+											"parameter_shortname" : "toggle[26]",
+											"parameter_type" : 2
+										}
+
+									}
+,
+									"varname" : "toggle[26]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1025",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 568.083337068557739, 78.0, 42.0, 22.0 ],
+									"text" : "r ch17"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1026",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 68.0, 71.0, 35.0, 22.0 ],
+									"text" : "r ch1"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1027",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 244.348577857017517, 78.0, 35.0, 22.0 ],
+									"text" : "r ch2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1028",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 358.583337068557739, 78.0, 35.0, 22.0 ],
+									"text" : "r ch3"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-1029",
+									"maxclass" : "newobj",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 464.583337068557739, 78.0, 35.0, 22.0 ],
+									"text" : "r ch4"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1034", 0 ],
+									"source" : [ "obj-1015", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-16", 0 ],
+									"source" : [ "obj-1019", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"source" : [ "obj-1022", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-840", 0 ],
+									"source" : [ "obj-1025", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1022", 0 ],
+									"source" : [ "obj-1026", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1019", 0 ],
+									"source" : [ "obj-1027", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1015", 0 ],
+									"source" : [ "obj-1028", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-842", 0 ],
+									"source" : [ "obj-1029", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1038", 0 ],
+									"source" : [ "obj-1034", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1039", 0 ],
+									"source" : [ "obj-1034", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-1038", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
+									"source" : [ "obj-1039", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-14", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-13", 0 ],
+									"source" : [ "obj-15", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 1 ],
+									"source" : [ "obj-151", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-14", 0 ],
+									"source" : [ "obj-16", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-16", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-20", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-19", 0 ],
+									"source" : [ "obj-21", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"source" : [ "obj-22", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-21", 0 ],
+									"source" : [ "obj-22", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-28", 0 ],
+									"source" : [ "obj-25", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-29", 0 ],
+									"order" : 0,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-54", 0 ],
+									"order" : 1,
+									"source" : [ "obj-25", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-23", 0 ],
+									"order" : 0,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-51", 0 ],
+									"order" : 1,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-28", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-26", 0 ],
+									"source" : [ "obj-29", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-31", 1 ],
+									"source" : [ "obj-51", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-24", 0 ],
+									"source" : [ "obj-840", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-22", 0 ],
+									"source" : [ "obj-842", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 374.816666666666492, 114.803439912762428, 78.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p FootSwitch"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-839",
 					"maxclass" : "newobj",
@@ -72,7 +1185,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 4070.463224755435476, 3502.453994631541718, 85.232847127444074, 22.0 ],
-					"text" : "0.104935"
+					"text" : "0.001107"
 				}
 
 			}
@@ -613,7 +1726,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1211.0, 2658.0, 50.0, 22.0 ],
-					"text" : "1"
+					"text" : "0"
 				}
 
 			}
@@ -1644,7 +2757,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 876.805262041091964, 475.809408486900452, 59.0, 22.0 ],
+					"patching_rect" : [ 851.805262041091964, 531.210072077736072, 59.0, 22.0 ],
 					"text" : "r human1"
 				}
 
@@ -1694,7 +2807,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -1311.0, 745.0, 1200.0, 347.0 ],
+						"rect" : [ 101.0, 279.0, 1200.0, 347.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3334,7 +4447,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "int" ],
-					"patching_rect" : [ 489.574981593883649, 2751.408358565162416, 29.5, 22.0 ],
+					"patching_rect" : [ 489.574981593883649, 2746.261423781957092, 29.5, 22.0 ],
 					"text" : "t b i"
 				}
 
@@ -4089,6 +5202,14 @@
 							"number" : 5,
 							"data" : [ 5, "obj-514", "live.dial", "float", 0.803149580955505, 5, "obj-515", "live.dial", "float", 0.196850389242172, 5, "obj-490", "live.dial", "float", 0.881889760494232, 5, "obj-493", "live.dial", "float", 0.118110239505768, 5, "obj-497", "live.dial", "float", 1.0, 5, "obj-498", "live.dial", "float", 0.0, 5, "obj-510", "live.dial", "float", 0.992125988006592, 5, "obj-488", "live.dial", "float", 1.0, 5, "obj-485", "live.dial", "float", 0.0, 5, "obj-484", "live.dial", "float", 0.5, 5, "obj-483", "live.dial", "float", 0.645669281482697, 5, "obj-482", "live.dial", "float", 0.4251968562603, 5, "obj-480", "live.dial", "float", 0.673228323459625, 5, "obj-477", "live.dial", "float", 0.29527559876442, 5, "obj-476", "live.dial", "float", 0.5, 5, "obj-448", "live.dial", "float", 0.5, 6, "<invalid>", "gain~", "list", 64, 10.0 ]
 						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-514", "live.dial", "float", 0.803149580955505, 5, "obj-515", "live.dial", "float", 0.196850389242172, 5, "obj-490", "live.dial", "float", 0.881889760494232, 5, "obj-493", "live.dial", "float", 0.118110239505768, 5, "obj-497", "live.dial", "float", 1.0, 5, "obj-498", "live.dial", "float", 0.0, 5, "obj-510", "live.dial", "float", 0.992125988006592, 5, "obj-488", "live.dial", "float", 1.0, 5, "obj-485", "live.dial", "float", 0.0, 5, "obj-484", "live.dial", "float", 0.5, 5, "obj-483", "live.dial", "float", 0.645669281482697, 5, "obj-482", "live.dial", "float", 0.4251968562603, 5, "obj-480", "live.dial", "float", 0.673228323459625, 5, "obj-477", "live.dial", "float", 0.29527559876442, 5, "obj-476", "live.dial", "float", 0.5, 5, "obj-448", "live.dial", "float", 0.5 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-514", "live.dial", "float", 0.803149580955505, 5, "obj-515", "live.dial", "float", 0.196850389242172, 5, "obj-490", "live.dial", "float", 0.881889760494232, 5, "obj-493", "live.dial", "float", 0.118110239505768, 5, "obj-497", "live.dial", "float", 1.0, 5, "obj-498", "live.dial", "float", 0.0, 5, "obj-510", "live.dial", "float", 0.992125988006592, 5, "obj-488", "live.dial", "float", 1.0, 5, "obj-485", "live.dial", "float", 0.0, 5, "obj-484", "live.dial", "float", 0.5, 5, "obj-483", "live.dial", "float", 0.645669281482697, 5, "obj-482", "live.dial", "float", 0.4251968562603, 5, "obj-480", "live.dial", "float", 0.673228323459625, 5, "obj-477", "live.dial", "float", 0.29527559876442, 5, "obj-476", "live.dial", "float", 0.5, 5, "obj-448", "live.dial", "float", 0.5 ]
+						}
  ]
 				}
 
@@ -4251,6 +5372,14 @@
 , 						{
 							"number" : 5,
 							"data" : [ 5, "obj-548", "live.dial", "float", 0.0, 5, "obj-547", "live.dial", "float", 0.0, 5, "obj-541", "live.dial", "float", 0.0, 6, "obj-197", "gain~", "list", 58, 10.0, 5, "obj-577", "live.dial", "float", 0.677165389060974 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-548", "live.dial", "float", 0.0, 5, "obj-547", "live.dial", "float", 0.0, 5, "obj-541", "live.dial", "float", 0.0, 6, "obj-197", "gain~", "list", 58, 10.0, 5, "obj-577", "live.dial", "float", 0.645669341087341 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-548", "live.dial", "float", 0.0, 5, "obj-547", "live.dial", "float", 0.0, 5, "obj-541", "live.dial", "float", 0.0, 6, "obj-197", "gain~", "list", 58, 10.0, 5, "obj-577", "live.dial", "float", 0.889763832092285 ]
 						}
  ]
 				}
@@ -4415,6 +5544,14 @@
 							"number" : 5,
 							"data" : [ 6, "obj-533", "gain~", "list", 82, 10.0, 6, "obj-538", "gain~", "list", 50, 10.0, 6, "obj-225", "gain~", "list", 126, 10.0 ]
 						}
+, 						{
+							"number" : 6,
+							"data" : [ 6, "obj-533", "gain~", "list", 69, 10.0, 6, "obj-538", "gain~", "list", 76, 10.0, 6, "obj-225", "gain~", "list", 86, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 6, "obj-533", "gain~", "list", 74, 10.0, 6, "obj-538", "gain~", "list", 76, 10.0, 6, "obj-225", "gain~", "list", 86, 10.0 ]
+						}
  ]
 				}
 
@@ -4577,6 +5714,14 @@
 , 						{
 							"number" : 5,
 							"data" : [ 5, "obj-633", "live.dial", "float", 0.74015748500824, 5, "obj-636", "live.dial", "float", 0.267716526985168, 5, "obj-639", "live.dial", "float", 0.850393712520599, 5, "obj-540", "umenu", "int", 2, 5, "obj-709", "live.dial", "float", 0.858267724514008, 6, "obj-318", "gain~", "list", 64, 10.0, 5, "obj-710", "live.dial", "float", 1.0, 5, "obj-711", "live.dial", "float", 0.748031497001648 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-633", "live.dial", "float", 0.385826766490936, 5, "obj-636", "live.dial", "float", 0.842519700527191, 5, "obj-639", "live.dial", "float", 0.141732290387154, 5, "obj-540", "umenu", "int", 0, 5, "obj-709", "live.dial", "float", 0.275590568780899, 6, "obj-318", "gain~", "list", 52, 10.0, 5, "obj-710", "live.dial", "float", 0.141732290387154, 5, "obj-711", "live.dial", "float", 0.21259842813015 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-633", "live.dial", "float", 0.385826766490936, 5, "obj-636", "live.dial", "float", 0.842519700527191, 5, "obj-639", "live.dial", "float", 0.141732290387154, 5, "obj-540", "umenu", "int", 2, 5, "obj-709", "live.dial", "float", 0.275590568780899, 6, "obj-318", "gain~", "list", 100, 10.0, 5, "obj-710", "live.dial", "float", 0.141732290387154, 5, "obj-711", "live.dial", "float", 0.21259842813015 ]
 						}
  ]
 				}
@@ -4741,6 +5886,14 @@
 							"number" : 5,
 							"data" : [ 5, "obj-769", "live.dial", "float", 0.645669281482697, 5, "obj-770", "live.dial", "float", 0.834645688533783, 5, "obj-772", "live.dial", "float", 0.204724416136742, 6, "obj-289", "gain~", "list", 77, 10.0 ]
 						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-769", "live.dial", "float", 0.094488181173801, 5, "obj-770", "live.dial", "float", 0.622047245502472, 5, "obj-772", "live.dial", "float", 0.204724416136742, 6, "obj-289", "gain~", "list", 77, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-769", "live.dial", "float", 0.094488181173801, 5, "obj-770", "live.dial", "float", 0.622047245502472, 5, "obj-772", "live.dial", "float", 0.204724416136742, 6, "obj-289", "gain~", "list", 77, 10.0 ]
+						}
  ]
 				}
 
@@ -4904,6 +6057,14 @@
 							"number" : 5,
 							"data" : [ 5, "obj-621", "live.dial", "float", 0.5, 5, "obj-622", "live.dial", "float", 0.5, 5, "obj-623", "live.dial", "float", 0.5, 6, "obj-282", "gain~", "list", 110, 10.0 ]
 						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-621", "live.dial", "float", 0.161417320370674, 5, "obj-622", "live.dial", "float", 0.24015748500824, 5, "obj-623", "live.dial", "float", 0.704724431037903, 6, "obj-282", "gain~", "list", 73, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-621", "live.dial", "float", 0.161417320370674, 5, "obj-622", "live.dial", "float", 0.24015748500824, 5, "obj-623", "live.dial", "float", 0.704724431037903, 6, "obj-282", "gain~", "list", 80, 10.0 ]
+						}
  ]
 				}
 
@@ -5066,6 +6227,14 @@
 , 						{
 							"number" : 5,
 							"data" : [ 5, "obj-751", "live.dial", "float", 0.15363022685051, 5, "obj-752", "live.dial", "float", 0.846456706523895, 5, "obj-755", "live.dial", "float", 0.161417320370674, 6, "obj-269", "gain~", "list", 117, 10.0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-751", "live.dial", "float", 0.15363022685051, 5, "obj-752", "live.dial", "float", 0.846456706523895, 5, "obj-755", "live.dial", "float", 0.161417320370674, 6, "obj-269", "gain~", "list", 101, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-751", "live.dial", "float", 0.15363022685051, 5, "obj-752", "live.dial", "float", 0.846456706523895, 5, "obj-755", "live.dial", "float", 0.161417320370674, 6, "obj-269", "gain~", "list", 101, 10.0 ]
 						}
  ]
 				}
@@ -5406,6 +6575,14 @@
 							"number" : 5,
 							"data" : [ 5, "obj-743", "live.dial", "float", 0.275590568780899, 5, "obj-745", "live.dial", "float", 1.0, 5, "obj-746", "live.dial", "float", 0.527559041976929, 6, "obj-212", "gain~", "list", 118, 10.0, 5, "obj-569", "slider", "float", 0.247111678123474 ]
 						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-743", "live.dial", "float", 0.275590568780899, 5, "obj-745", "live.dial", "float", 1.0, 5, "obj-746", "live.dial", "float", 0.527559041976929, 6, "obj-212", "gain~", "list", 119, 10.0, 5, "obj-569", "slider", "float", 0.247111678123474 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-743", "live.dial", "float", 0.275590568780899, 5, "obj-745", "live.dial", "float", 1.0, 5, "obj-746", "live.dial", "float", 0.527559041976929, 6, "obj-212", "gain~", "list", 106, 10.0, 5, "obj-569", "slider", "float", 0.247111678123474 ]
+						}
  ]
 				}
 
@@ -5437,6 +6614,14 @@
 , 						{
 							"number" : 5,
 							"data" : [ 5, "obj-798", "live.dial", "float", 0.854330718517303, 5, "obj-851", "live.dial", "float", 0.799212574958801, 5, "obj-859", "live.dial", "float", 0.704724431037903, 6, "obj-202", "gain~", "list", 83, 10.0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 5, "obj-798", "live.dial", "float", 0.641732275485992, 5, "obj-851", "live.dial", "float", 0.255905479192734, 5, "obj-859", "live.dial", "float", 0.704724431037903, 6, "obj-202", "gain~", "list", 91, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-798", "live.dial", "float", 0.641732275485992, 5, "obj-851", "live.dial", "float", 0.255905479192734, 5, "obj-859", "live.dial", "float", 0.704724431037903, 6, "obj-202", "gain~", "list", 91, 10.0 ]
 						}
  ]
 				}
@@ -5569,6 +6754,14 @@
 , 						{
 							"number" : 5,
 							"data" : [ 6, "obj-153", "gain~", "list", 94, 10.0, 5, "obj-778", "live.dial", "float", 0.5, 5, "obj-779", "live.dial", "float", 0.5, 5, "obj-780", "live.dial", "float", 0.496062994003296, 6, "obj-644", "gain~", "list", 114, 10.0 ]
+						}
+, 						{
+							"number" : 6,
+							"data" : [ 6, "obj-153", "gain~", "list", 80, 10.0, 5, "obj-778", "live.dial", "float", 0.23228345811367, 5, "obj-779", "live.dial", "float", 0.657480299472809, 5, "obj-780", "live.dial", "float", 0.62992125749588, 6, "obj-644", "gain~", "list", 91, 10.0 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 6, "obj-153", "gain~", "list", 80, 10.0, 5, "obj-778", "live.dial", "float", 0.23228345811367, 5, "obj-779", "live.dial", "float", 0.657480299472809, 5, "obj-780", "live.dial", "float", 0.62992125749588, 6, "obj-644", "gain~", "list", 0, 10.0 ]
 						}
  ]
 				}
@@ -21594,8 +22787,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 1.0, 0, 620.556512949295325, 1.0, 0, 888.999999999964075, 0.899999976158142, 0 ],
-					"domain" : 889.0,
+					"addpoints" : [ 0.0, 1.0, 0, 249.596827842766317, 0.941739948701031, 0, 1086.148407366821402, 1.0, 0, 1555.999999999933152, 0.899999976158142, 0 ],
+					"domain" : 1556.0,
 					"id" : "obj-424",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -21617,7 +22810,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 991.148303452301434, 441.39605676158169, 342.0, 29.0 ],
+					"patching_rect" : [ 1088.989341235728261, 996.749210945217328, 342.0, 29.0 ],
 					"text" : "PRED EMG RAW vs TKEO???????"
 				}
 
@@ -27174,7 +28367,7 @@
 						}
 , 						{
 							"number" : 7,
-							"data" : [ 5, "obj-1138", "live.grid", "mode", 0, 5, "obj-1138", "live.grid", "matrixmode", 1, 5, "obj-1138", "live.grid", "columns", 32, 5, "obj-1138", "live.grid", "rows", 32, 37, "obj-1138", "live.grid", "constraint", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 16, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 23, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 26, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 27, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 28, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 29, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 31, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 32, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, "obj-1138", "live.grid", "clear", 12, "obj-1138", "live.grid", "steps", 1, 5, 1, 6, 1, 7, 1, 8, 12, "obj-1138", "live.grid", "steps", 2, 5, 2, 6, 2, 7, 2, 8, 12, "obj-1138", "live.grid", "steps", 3, 5, 3, 6, 3, 7, 3, 8, 12, "obj-1138", "live.grid", "steps", 4, 5, 4, 6, 4, 7, 4, 8, 12, "obj-1138", "live.grid", "steps", 5, 5, 5, 6, 5, 7, 5, 8, 12, "obj-1138", "live.grid", "steps", 6, 5, 6, 6, 6, 7, 6, 8, 12, "obj-1138", "live.grid", "steps", 7, 5, 7, 6, 7, 7, 7, 8, 12, "obj-1138", "live.grid", "steps", 8, 5, 8, 6, 8, 7, 8, 8, 12, "obj-1138", "live.grid", "steps", 9, 5, 9, 6, 9, 7, 9, 8, 12, "obj-1138", "live.grid", "steps", 10, 5, 10, 6, 10, 7, 10, 8, 12, "obj-1138", "live.grid", "steps", 11, 5, 11, 6, 11, 7, 11, 8, 12, "obj-1138", "live.grid", "steps", 12, 5, 12, 6, 12, 7, 12, 8, 12, "obj-1138", "live.grid", "steps", 13, 5, 13, 6, 13, 7, 13, 8, 12, "obj-1138", "live.grid", "steps", 14, 5, 14, 6, 14, 7, 14, 8, 12, "obj-1138", "live.grid", "steps", 15, 5, 15, 6, 15, 7, 15, 8, 12, "obj-1138", "live.grid", "steps", 16, 5, 16, 6, 16, 7, 16, 8, 12, "obj-1138", "live.grid", "steps", 17, 5, 17, 6, 17, 7, 17, 8, 12, "obj-1138", "live.grid", "steps", 18, 5, 18, 6, 18, 7, 18, 8, 12, "obj-1138", "live.grid", "steps", 19, 5, 19, 6, 19, 7, 19, 8, 12, "obj-1138", "live.grid", "steps", 20, 5, 20, 6, 20, 7, 20, 8, 12, "obj-1138", "live.grid", "steps", 21, 5, 21, 6, 21, 7, 21, 8, 12, "obj-1138", "live.grid", "steps", 22, 5, 22, 6, 22, 7, 22, 8, 12, "obj-1138", "live.grid", "steps", 23, 5, 23, 6, 23, 7, 23, 8, 12, "obj-1138", "live.grid", "steps", 24, 5, 24, 6, 24, 7, 24, 8, 12, "obj-1138", "live.grid", "steps", 25, 5, 25, 6, 25, 7, 25, 8, 12, "obj-1138", "live.grid", "steps", 26, 5, 26, 6, 26, 7, 26, 8, 12, "obj-1138", "live.grid", "steps", 27, 5, 27, 6, 27, 7, 27, 8, 12, "obj-1138", "live.grid", "steps", 28, 5, 28, 6, 28, 7, 28, 8, 12, "obj-1138", "live.grid", "steps", 29, 5, 29, 6, 29, 7, 29, 8, 12, "obj-1138", "live.grid", "steps", 30, 5, 30, 6, 30, 7, 30, 8, 12, "obj-1138", "live.grid", "steps", 31, 5, 31, 6, 31, 7, 31, 8, 12, "obj-1138", "live.grid", "steps", 32, 5, 32, 6, 32, 7, 32, 8, 36, "obj-1138", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+							"data" : [ 5, "obj-1138", "live.grid", "mode", 0, 5, "obj-1138", "live.grid", "matrixmode", 1, 5, "obj-1138", "live.grid", "columns", 32, 5, "obj-1138", "live.grid", "rows", 32, 37, "obj-1138", "live.grid", "constraint", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 16, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 23, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 26, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 27, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 28, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 29, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 31, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 32, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, "obj-1138", "live.grid", "clear", 6, "obj-1138", "live.grid", "steps", 1, 28, 8, "obj-1138", "live.grid", "steps", 2, 28, 2, 29, 10, "obj-1138", "live.grid", "steps", 3, 20, 3, 23, 3, 29, 16, "obj-1138", "live.grid", "steps", 4, 8, 4, 17, 4, 25, 4, 26, 4, 27, 4, 28, 12, "obj-1138", "live.grid", "steps", 5, 8, 5, 17, 5, 25, 5, 27, 10, "obj-1138", "live.grid", "steps", 6, 8, 6, 25, 6, 29, 10, "obj-1138", "live.grid", "steps", 7, 8, 7, 25, 7, 30, 12, "obj-1138", "live.grid", "steps", 8, 9, 8, 10, 8, 25, 8, 30, 10, "obj-1138", "live.grid", "steps", 9, 12, 9, 26, 9, 31, 12, "obj-1138", "live.grid", "steps", 10, 12, 10, 13, 10, 26, 10, 28, 6, "obj-1138", "live.grid", "steps", 11, 11, 6, "obj-1138", "live.grid", "steps", 12, 11, 10, "obj-1138", "live.grid", "steps", 13, 9, 13, 10, 13, 12, 12, "obj-1138", "live.grid", "steps", 14, 10, 14, 24, 14, 25, 14, 26, 14, "obj-1138", "live.grid", "steps", 15, 11, 15, 23, 15, 24, 15, 25, 15, 26, 16, "obj-1138", "live.grid", "steps", 16, 12, 16, 23, 16, 24, 16, 25, 16, 26, 16, 32, 22, "obj-1138", "live.grid", "steps", 17, 10, 17, 11, 17, 12, 17, 13, 17, 23, 17, 24, 17, 25, 17, 26, 17, 32, 16, "obj-1138", "live.grid", "steps", 18, 12, 18, 23, 18, 24, 18, 25, 18, 26, 18, 32, 8, "obj-1138", "live.grid", "steps", 19, 8, 19, 32, 8, "obj-1138", "live.grid", "steps", 20, 8, 20, 32, 10, "obj-1138", "live.grid", "steps", 21, 8, 21, 20, 21, 32, 10, "obj-1138", "live.grid", "steps", 22, 8, 22, 18, 22, 20, 10, "obj-1138", "live.grid", "steps", 23, 1, 23, 8, 23, 17, 8, "obj-1138", "live.grid", "steps", 24, 1, 24, 15, 12, "obj-1138", "live.grid", "steps", 25, 2, 25, 14, 25, 24, 25, 25, 10, "obj-1138", "live.grid", "steps", 26, 2, 26, 14, 26, 24, 14, "obj-1138", "live.grid", "steps", 27, 2, 27, 8, 27, 14, 27, 23, 27, 24, 18, "obj-1138", "live.grid", "steps", 28, 2, 28, 7, 28, 8, 28, 13, 28, 14, 28, 22, 28, 23, 12, "obj-1138", "live.grid", "steps", 29, 3, 29, 21, 29, 22, 29, 32, 10, "obj-1138", "live.grid", "steps", 30, 3, 30, 4, 30, 32, 10, "obj-1138", "live.grid", "steps", 31, 4, 31, 5, 31, 32, 18, "obj-1138", "live.grid", "steps", 32, 5, 32, 27, 32, 28, 32, 29, 32, 30, 32, 31, 32, 32, 36, "obj-1138", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
 , 						{
 							"number" : 8,
@@ -27187,6 +28380,14 @@
 , 						{
 							"number" : 10,
 							"data" : [ 5, "obj-1138", "live.grid", "mode", 0, 5, "obj-1138", "live.grid", "matrixmode", 1, 5, "obj-1138", "live.grid", "columns", 32, 5, "obj-1138", "live.grid", "rows", 32, 37, "obj-1138", "live.grid", "constraint", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 16, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 23, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 26, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 27, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 28, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 29, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 31, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 32, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, "obj-1138", "live.grid", "clear", 24, "obj-1138", "live.grid", "steps", 1, 22, 1, 23, 1, 24, 1, 25, 1, 26, 1, 27, 1, 28, 1, 29, 1, 30, 1, 31, 28, "obj-1138", "live.grid", "steps", 2, 10, 2, 11, 2, 13, 2, 15, 2, 16, 2, 17, 2, 18, 2, 19, 2, 20, 2, 21, 2, 31, 2, 32, 14, "obj-1138", "live.grid", "steps", 3, 9, 3, 20, 3, 22, 3, 23, 3, 24, 10, "obj-1138", "live.grid", "steps", 4, 7, 4, 19, 4, 24, 12, "obj-1138", "live.grid", "steps", 5, 6, 5, 19, 5, 20, 5, 24, 28, "obj-1138", "live.grid", "steps", 6, 5, 6, 6, 6, 7, 6, 8, 6, 9, 6, 10, 6, 11, 6, 12, 6, 21, 6, 22, 6, 23, 6, 24, 12, "obj-1138", "live.grid", "steps", 7, 5, 7, 13, 7, 28, 7, 29, 14, "obj-1138", "live.grid", "steps", 8, 4, 8, 13, 8, 27, 8, 30, 8, 31, 24, "obj-1138", "live.grid", "steps", 9, 3, 9, 4, 9, 14, 9, 19, 9, 20, 9, 21, 9, 22, 9, 27, 9, 31, 9, 32, 22, "obj-1138", "live.grid", "steps", 10, 2, 10, 4, 10, 14, 10, 18, 10, 22, 10, 27, 10, 28, 10, 29, 10, 31, 14, "obj-1138", "live.grid", "steps", 11, 1, 11, 4, 11, 14, 11, 18, 11, 22, 16, "obj-1138", "live.grid", "steps", 12, 1, 12, 5, 12, 13, 12, 18, 12, 19, 12, 20, 20, "obj-1138", "live.grid", "steps", 13, 1, 13, 5, 13, 7, 13, 8, 13, 9, 13, 10, 13, 11, 13, 12, 14, "obj-1138", "live.grid", "steps", 14, 1, 14, 24, 14, 25, 14, 26, 14, 27, 14, "obj-1138", "live.grid", "steps", 15, 1, 15, 22, 15, 23, 15, 24, 15, 27, 14, "obj-1138", "live.grid", "steps", 16, 2, 16, 20, 16, 21, 16, 22, 16, 26, 54, "obj-1138", "live.grid", "steps", 17, 2, 17, 9, 17, 10, 17, 11, 17, 12, 17, 13, 17, 14, 17, 15, 17, 16, 17, 17, 17, 18, 17, 19, 17, 20, 17, 21, 17, 22, 17, 23, 17, 24, 17, 25, 17, 26, 17, 27, 17, 28, 17, 29, 17, 30, 17, 31, 17, 32, 58, "obj-1138", "live.grid", "steps", 18, 3, 18, 4, 18, 5, 18, 9, 18, 10, 18, 11, 18, 12, 18, 13, 18, 14, 18, 15, 18, 16, 18, 17, 18, 18, 18, 19, 18, 20, 18, 21, 18, 22, 18, 23, 18, 24, 18, 25, 18, 26, 18, 27, 18, 28, 18, 29, 18, 30, 18, 31, 18, 32, 60, "obj-1138", "live.grid", "steps", 19, 5, 19, 6, 19, 7, 19, 8, 19, 9, 19, 10, 19, 11, 19, 12, 19, 13, 19, 14, 19, 15, 19, 16, 19, 17, 19, 18, 19, 19, 19, 20, 19, 21, 19, 22, 19, 23, 19, 24, 19, 25, 19, 26, 19, 27, 19, 28, 19, 29, 19, 30, 19, 31, 19, 32, 44, "obj-1138", "live.grid", "steps", 20, 9, 20, 10, 20, 11, 20, 12, 20, 13, 20, 14, 20, 15, 20, 16, 20, 17, 20, 18, 20, 19, 20, 20, 20, 21, 20, 22, 20, 23, 20, 28, 20, 29, 20, 30, 20, 31, 20, 32, 40, "obj-1138", "live.grid", "steps", 21, 9, 21, 10, 21, 11, 21, 12, 21, 13, 21, 17, 21, 18, 21, 19, 21, 20, 21, 21, 21, 22, 21, 25, 21, 26, 21, 28, 21, 29, 21, 30, 21, 31, 21, 32, 44, "obj-1138", "live.grid", "steps", 22, 9, 22, 10, 22, 11, 22, 12, 22, 15, 22, 16, 22, 17, 22, 18, 22, 19, 22, 20, 22, 21, 22, 22, 22, 24, 22, 25, 22, 26, 22, 28, 22, 29, 22, 30, 22, 31, 22, 32, 40, "obj-1138", "live.grid", "steps", 23, 9, 23, 10, 23, 11, 23, 14, 23, 15, 23, 16, 23, 17, 23, 18, 23, 19, 23, 20, 23, 21, 23, 22, 23, 27, 23, 28, 23, 29, 23, 30, 23, 31, 23, 32, 52, "obj-1138", "live.grid", "steps", 24, 8, 24, 9, 24, 10, 24, 11, 24, 13, 24, 14, 24, 15, 24, 16, 24, 17, 24, 18, 24, 19, 24, 20, 24, 21, 24, 22, 24, 23, 24, 24, 24, 25, 24, 26, 24, 27, 24, 28, 24, 29, 24, 30, 24, 31, 24, 32, 52, "obj-1138", "live.grid", "steps", 25, 8, 25, 9, 25, 10, 25, 11, 25, 13, 25, 14, 25, 15, 25, 16, 25, 17, 25, 18, 25, 19, 25, 20, 25, 21, 25, 22, 25, 23, 25, 24, 25, 25, 25, 26, 25, 27, 25, 28, 25, 29, 25, 30, 25, 31, 25, 32, 46, "obj-1138", "live.grid", "steps", 26, 8, 26, 9, 26, 10, 26, 11, 26, 13, 26, 14, 26, 15, 26, 16, 26, 17, 26, 18, 26, 19, 26, 20, 26, 21, 26, 22, 26, 23, 26, 27, 26, 28, 26, 29, 26, 30, 26, 31, 26, 32, 44, "obj-1138", "live.grid", "steps", 27, 9, 27, 10, 27, 11, 27, 13, 27, 14, 27, 15, 27, 16, 27, 17, 27, 18, 27, 19, 27, 20, 27, 21, 27, 22, 27, 24, 27, 25, 27, 28, 27, 29, 27, 30, 27, 31, 27, 32, 44, "obj-1138", "live.grid", "steps", 28, 9, 28, 10, 28, 11, 28, 13, 28, 14, 28, 15, 28, 16, 28, 17, 28, 18, 28, 19, 28, 20, 28, 21, 28, 24, 28, 25, 28, 26, 28, 27, 28, 29, 28, 30, 28, 31, 28, 32, 34, "obj-1138", "live.grid", "steps", 29, 9, 29, 10, 29, 11, 29, 19, 29, 20, 29, 21, 29, 23, 29, 24, 29, 25, 29, 26, 29, 28, 29, 29, 29, 30, 29, 31, 29, 32, 40, "obj-1138", "live.grid", "steps", 30, 9, 30, 10, 30, 11, 30, 12, 30, 13, 30, 14, 30, 15, 30, 16, 30, 17, 30, 18, 30, 19, 30, 20, 30, 21, 30, 28, 30, 29, 30, 30, 30, 31, 30, 32, 52, "obj-1138", "live.grid", "steps", 31, 9, 31, 10, 31, 11, 31, 12, 31, 13, 31, 14, 31, 15, 31, 16, 31, 17, 31, 18, 31, 19, 31, 20, 31, 21, 31, 22, 31, 23, 31, 24, 31, 25, 31, 26, 31, 27, 31, 28, 31, 29, 31, 30, 31, 31, 31, 32, 52, "obj-1138", "live.grid", "steps", 32, 9, 32, 10, 32, 11, 32, 12, 32, 13, 32, 14, 32, 15, 32, 16, 32, 17, 32, 18, 32, 19, 32, 20, 32, 21, 32, 22, 32, 23, 32, 24, 32, 25, 32, 26, 32, 27, 32, 28, 32, 29, 32, 30, 32, 31, 32, 32, 36, "obj-1138", "live.grid", "directions", 1, 1, 1, 1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+						}
+, 						{
+							"number" : 11,
+							"data" : [ 5, "obj-1138", "live.grid", "mode", 0, 5, "obj-1138", "live.grid", "matrixmode", 1, 5, "obj-1138", "live.grid", "columns", 32, 5, "obj-1138", "live.grid", "rows", 32, 37, "obj-1138", "live.grid", "constraint", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 16, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 23, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 26, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 27, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 28, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 29, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 31, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 32, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, "obj-1138", "live.grid", "clear", 6, "obj-1138", "live.grid", "steps", 2, 9, 6, "obj-1138", "live.grid", "steps", 3, 9, 8, "obj-1138", "live.grid", "steps", 4, 9, 4, 24, 8, "obj-1138", "live.grid", "steps", 5, 9, 5, 24, 8, "obj-1138", "live.grid", "steps", 6, 9, 6, 24, 8, "obj-1138", "live.grid", "steps", 7, 9, 7, 24, 16, "obj-1138", "live.grid", "steps", 8, 5, 8, 6, 8, 7, 8, 8, 8, 9, 8, 24, 6, "obj-1138", "live.grid", "steps", 9, 24, 14, "obj-1138", "live.grid", "steps", 10, 20, 10, 21, 10, 22, 10, 23, 10, 24, 6, "obj-1138", "live.grid", "steps", 11, 14, 6, "obj-1138", "live.grid", "steps", 12, 14, 8, "obj-1138", "live.grid", "steps", 13, 14, 13, 31, 24, "obj-1138", "live.grid", "steps", 14, 7, 14, 8, 14, 9, 14, 10, 14, 11, 14, 12, 14, 13, 14, 14, 14, 19, 14, 31, 8, "obj-1138", "live.grid", "steps", 15, 19, 15, 31, 8, "obj-1138", "live.grid", "steps", 16, 19, 16, 31, 16, "obj-1138", "live.grid", "steps", 17, 19, 17, 27, 17, 28, 17, 29, 17, 30, 17, 31, 6, "obj-1138", "live.grid", "steps", 18, 19, 6, "obj-1138", "live.grid", "steps", 19, 19, 8, "obj-1138", "live.grid", "steps", 20, 8, 20, 19, 18, "obj-1138", "live.grid", "steps", 21, 8, 21, 14, 21, 15, 21, 16, 21, 17, 21, 18, 21, 19, 8, "obj-1138", "live.grid", "steps", 22, 8, 22, 28, 8, "obj-1138", "live.grid", "steps", 23, 8, 23, 28, 8, "obj-1138", "live.grid", "steps", 24, 8, 24, 28, 8, "obj-1138", "live.grid", "steps", 25, 8, 25, 28, 8, "obj-1138", "live.grid", "steps", 26, 8, 26, 28, 16, "obj-1138", "live.grid", "steps", 27, 4, 27, 5, 27, 6, 27, 7, 27, 8, 27, 28, 8, "obj-1138", "live.grid", "steps", 28, 17, 28, 28, 16, "obj-1138", "live.grid", "steps", 29, 17, 29, 24, 29, 25, 29, 26, 29, 27, 29, 28, 6, "obj-1138", "live.grid", "steps", 30, 17, 16, "obj-1138", "live.grid", "steps", 31, 12, 31, 13, 31, 14, 31, 15, 31, 16, 31, 17, 36, "obj-1138", "live.grid", "directions", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
+						}
+, 						{
+							"number" : 12,
+							"data" : [ 5, "obj-1138", "live.grid", "mode", 0, 5, "obj-1138", "live.grid", "matrixmode", 1, 5, "obj-1138", "live.grid", "columns", 32, 5, "obj-1138", "live.grid", "rows", 32, 37, "obj-1138", "live.grid", "constraint", 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 4, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 7, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 8, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 9, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 10, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 11, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 13, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 14, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 15, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 16, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 17, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 18, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 19, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 20, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 21, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 22, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 23, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 24, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 26, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 27, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 28, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 29, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 30, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 31, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 37, "obj-1138", "live.grid", "constraint", 32, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 4, "obj-1138", "live.grid", "clear", 6, "obj-1138", "live.grid", "steps", 1, 28, 10, "obj-1138", "live.grid", "steps", 2, 6, 2, 8, 2, 28, 10, "obj-1138", "live.grid", "steps", 3, 5, 3, 23, 3, 28, 10, "obj-1138", "live.grid", "steps", 4, 6, 4, 23, 4, 28, 14, "obj-1138", "live.grid", "steps", 5, 5, 5, 6, 5, 8, 5, 24, 5, 28, 10, "obj-1138", "live.grid", "steps", 6, 17, 6, 24, 6, 27, 14, "obj-1138", "live.grid", "steps", 7, 6, 7, 8, 7, 17, 7, 24, 7, 26, 12, "obj-1138", "live.grid", "steps", 8, 7, 8, 17, 8, 24, 8, 26, 12, "obj-1138", "live.grid", "steps", 9, 6, 9, 16, 9, 24, 9, 26, 14, "obj-1138", "live.grid", "steps", 10, 5, 10, 8, 10, 16, 10, 24, 10, 25, 12, "obj-1138", "live.grid", "steps", 11, 15, 11, 23, 11, 25, 11, 32, 12, "obj-1138", "live.grid", "steps", 12, 15, 12, 22, 12, 25, 12, 32, 10, "obj-1138", "live.grid", "steps", 13, 22, 13, 26, 13, 32, 12, "obj-1138", "live.grid", "steps", 14, 8, 14, 21, 14, 26, 14, 32, 12, "obj-1138", "live.grid", "steps", 15, 5, 15, 21, 15, 27, 15, 32, 10, "obj-1138", "live.grid", "steps", 16, 21, 16, 27, 16, 32, 16, "obj-1138", "live.grid", "steps", 17, 5, 17, 21, 17, 27, 17, 30, 17, 31, 17, 32, 10, "obj-1138", "live.grid", "steps", 18, 6, 18, 21, 18, 27, 12, "obj-1138", "live.grid", "steps", 19, 6, 19, 14, 19, 21, 19, 27, 12, "obj-1138", "live.grid", "steps", 20, 13, 20, 14, 20, 21, 20, 26, 12, "obj-1138", "live.grid", "steps", 21, 8, 21, 13, 21, 22, 21, 26, 12, "obj-1138", "live.grid", "steps", 22, 12, 22, 13, 22, 23, 22, 26, 12, "obj-1138", "live.grid", "steps", 23, 5, 23, 11, 23, 23, 23, 26, 10, "obj-1138", "live.grid", "steps", 24, 7, 24, 11, 24, 26, 12, "obj-1138", "live.grid", "steps", 25, 5, 25, 8, 25, 11, 25, 26, 14, "obj-1138", "live.grid", "steps", 26, 6, 26, 10, 26, 22, 26, 26, 26, 27, 14, "obj-1138", "live.grid", "steps", 27, 5, 27, 10, 27, 22, 27, 26, 27, 27, 10, "obj-1138", "live.grid", "steps", 28, 22, 28, 26, 28, 27, 14, "obj-1138", "live.grid", "steps", 29, 5, 29, 7, 29, 23, 29, 26, 29, 27, 8, "obj-1138", "live.grid", "steps", 30, 6, 30, 8, 10, "obj-1138", "live.grid", "steps", 31, 7, 31, 24, 31, 25, 10, "obj-1138", "live.grid", "steps", 32, 6, 32, 8, 32, 24, 36, "obj-1138", "live.grid", "directions", 1, 1, 1, 1, -1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]
 						}
  ]
 				}
@@ -27633,7 +28834,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2286.78845280119549, 1248.766132883693899, 47.0, 33.0 ],
-					"text" : "27"
+					"text" : "2"
 				}
 
 			}
@@ -27933,7 +29134,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1457.013914612698727, 1179.611018851440349, 360.322580933570862, 22.0 ],
-					"text" : "0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 27"
+					"text" : "0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 2"
 				}
 
 			}
@@ -30029,7 +31230,7 @@
 					"patching_rect" : [ 400.99667633333263, 1430.0511797615859, 251.373314000000846, 122.91665600000033 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 10.451449282963949, 711.396356152165481, 251.373314000000846, 122.91665600000033 ],
-					"setfilter" : [ 3, 5, 1, 0, 0, 227.269927978515625, 0.986478447914124, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 17.293899536132812, 0.249095350503922, 0.498860776424408, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 16233.357421875, 0.430517733097076, 0.351183474063873, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 0, 0, 0, 1619.0384521484375, 5.481959819793701, 1.830636978149414, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
+					"setfilter" : [ 3, 5, 1, 0, 0, 227.269927978515625, 0.986478447914124, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 17.293899536132812, 0.249095350503922, 0.498860776424408, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 16233.357421875, 0.430517733097076, 0.351183474063873, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 0, 0, 0, 1635.032958984375, 3.04248571395874, 1.830636978149414, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -30143,7 +31344,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -31222,7 +32422,7 @@
 									"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 									"parameter_enable" : 0,
 									"patching_rect" : [ 230.695390452795664, 281.742744147778012, 360.0, 155.0 ],
-									"setfilter" : [ 0, 3, 1, 0, 0, 309.750579833984375, 8.0, 77.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
+									"setfilter" : [ 0, 3, 1, 0, 0, 908.01422119140625, 8.0, 77.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ]
 								}
 
 							}
@@ -33736,7 +34936,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-928",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -39491,7 +40690,6 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-14",
-									"int" : 1,
 									"maxclass" : "gswitch",
 									"numinlets" : 3,
 									"numoutlets" : 1,
@@ -41713,7 +42911,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 784.708313000000089, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 784.708313000000089, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -41786,10 +42984,10 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 636.708313000000089, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 636.708313000000089, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 714.978344000000334, 14.5, 136.0, 72.083336000000031 ],
+									"presentation_rect" : [ 714.978344000000334, 14.5, 136.0, 72.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "multislider[19]",
@@ -41872,7 +43070,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 487.752808000000186, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 487.752808000000186, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -42029,7 +43227,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 332.708313000000089, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 332.708313000000089, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -42102,10 +43300,10 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 184.708313000000089, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 184.708313000000089, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 878.917529999999488, 14.5, 173.0, 72.083336000000031 ],
+									"presentation_rect" : [ 878.917529999999488, 14.5, 173.0, 72.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
 											"parameter_longname" : "multislider[22]",
@@ -42188,7 +43386,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"parameter_enable" : 1,
-									"patching_rect" : [ 35.752808000000186, 250.783347999999819, 136.0, 72.083336000000031 ],
+									"patching_rect" : [ 35.752808000000186, 250.783347999999819, 136.0, 72.0 ],
 									"peakcolor" : [ 0.498039, 0.498039, 0.498039, 1.0 ],
 									"saved_attribute_attributes" : 									{
 										"valueof" : 										{
@@ -42975,7 +44173,7 @@
 					"patching_rect" : [ 218.201667593882803, 3342.625017153462977, 251.373314000000846, 122.91665600000033 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1508.101636962703196, 118.98165502199538, 286.373314000000846, 122.91665600000033 ],
-					"setfilter" : [ 3, 5, 1, 0, 0, 88.642189025878906, 7.96375846862793, 0.768734395503998, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 33.226711273193359, 0.002055182820186, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 18183.125, 0.000213309234823, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 0, 0, 0, 724.278076171875, 0.240473538637161, 1.830636978149414, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
+					"setfilter" : [ 3, 5, 1, 0, 0, 88.642189025878906, 7.96375846862793, 0.768734395503998, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2, 5, 1, 0, 0, 33.226711273193359, 0.002055182820186, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1, 5, 1, 0, 0, 18183.125, 0.000213309234823, 2.5, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0, 5, 0, 0, 0, 10525.048828125, 0.0625, 0.657815515995026, 30.0, 19845.0, 0.0625, 16.0, 0.5, 25.0 ],
 					"textcolor" : [ 0.921569, 0.917647, 0.933333, 1.0 ]
 				}
 
@@ -43244,8 +44442,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 628.574981593883649, 3077.993411042821208, 83.0, 22.0 ],
-					"text" : "loadmess 100"
+					"patching_rect" : [ 628.574981593883649, 3077.993411042821208, 77.0, 22.0 ],
+					"text" : "loadmess 10"
 				}
 
 			}
@@ -43550,7 +44748,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 1024.0, 1.0, 0, 0.0, 1024.0, 0.0, 0, 0.0 ],
+									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 500.0, 1.0, 0, 0.1, 1024.0, 0.0, 0, -0.1 ],
 									"bgcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ],
 									"domain" : 1024.0,
 									"id" : "obj-53",
@@ -43967,8 +45165,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 278.574981593883649, 3079.401771042820656, 90.0, 22.0 ],
-					"text" : "loadmess 2000"
+					"patching_rect" : [ 278.574981593883649, 3079.401771042820656, 70.0, 22.0 ],
+					"text" : "loadmess 5"
 				}
 
 			}
@@ -43983,7 +45181,7 @@
 					"patching_rect" : [ 266.574981593883649, 3055.568435042820965, 109.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1698.800000000000182, 64.318366798780175, 37.0, 22.0 ],
-					"text" : "High ",
+					"text" : "Low",
 					"textcolor" : [ 0.956862745098039, 0.215686274509804, 0.145098039215686, 1.0 ]
 				}
 
@@ -44284,7 +45482,7 @@
 							}
 , 							{
 								"box" : 								{
-									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 500.0, 1.0, 0, 0.1, 1024.0, 0.0, 0, -0.1 ],
+									"addpoints_with_curve" : [ 0.0, 0.0, 0, 0.0, 500.0, 1.0, 0, -0.5, 1024.0, 0.0, 0, 0.5 ],
 									"bgcolor" : [ 0.803922, 0.898039, 0.909804, 1.0 ],
 									"domain" : 1024.0,
 									"id" : "obj-53",
@@ -48581,8 +49779,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1572.185915221418782, 198.089084737505573, 70.0, 22.0 ],
-					"text" : "loadmess 0"
+					"patching_rect" : [ 2152.805651892866535, 403.572658889498371, 70.0, 22.0 ],
+					"text" : "loadmess 1"
 				}
 
 			}
@@ -49624,7 +50822,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 3388.463224755435476, 3346.93207523827823, 33.299999999999955, 49.0 ],
+					"patching_rect" : [ 3388.463224755435476, 3332.958327746441682, 33.299999999999955, 49.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -52826,8 +54024,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 876.775627446464568, 1003.157398808129983, 103.0, 22.0 ],
-					"text" : "scale 0. 1. 0. 100."
+					"patching_rect" : [ 876.775627446464568, 1003.157398808129983, 110.0, 22.0 ],
+					"text" : "scale 0. 0.5 0. 100."
 				}
 
 			}
@@ -52947,7 +54145,6 @@
 				"box" : 				{
 					"id" : "obj-733",
 					"inputs" : 4,
-					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 5,
 					"numoutlets" : 1,
@@ -54643,7 +55840,8 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 75.0, 0, 69.851784417260546, 150.0, 0, 132.9585805337652, 135.730088495575217, 0, 264.026541698801907, 135.730088495575217, 0, 796.102250563564098, 122.044869523918891, 0, 999.999999999958845, 86.615044247787608, 0, 999.999999999999886, 140.186442927707787, 0 ],
+					"addpoints" : [ 0.0, 75.0, 0, 126.222174441989793, 150.0, 0, 240.256155024512708, 135.730088495575217, 0, 477.095960849735093, 135.730088495575217, 0, 1438.556766768359694, 122.044869523918891, 0, 1806.999999999919055, 86.615044247787608, 0, 1806.999999999994998, 140.186442927707787, 0 ],
+					"domain" : 1807.0,
 					"id" : "obj-361",
 					"maxclass" : "function",
 					"numinlets" : 1,
@@ -66072,8 +67270,36 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1202", 0 ],
+					"source" : [ "obj-1040", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-46", 0 ],
+					"source" : [ "obj-1042", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-601", 15 ],
 					"source" : [ "obj-1047", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-641", 0 ],
+					"source" : [ "obj-1048", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"source" : [ "obj-1049", 0 ]
 				}
 
 			}
@@ -66086,8 +67312,29 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-644", 0 ],
+					"source" : [ "obj-1051", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-601", 14 ],
 					"source" : [ "obj-1053", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-516", 0 ],
+					"source" : [ "obj-1057", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-540", 0 ],
+					"source" : [ "obj-1058", 0 ]
 				}
 
 			}
@@ -66118,6 +67365,34 @@
 				"patchline" : 				{
 					"destination" : [ "obj-903", 0 ],
 					"source" : [ "obj-1064", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1067", 0 ],
+					"source" : [ "obj-1065", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1065", 0 ],
+					"source" : [ "obj-1066", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-135", 0 ],
+					"source" : [ "obj-1067", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-297", 0 ],
+					"source" : [ "obj-1068", 0 ]
 				}
 
 			}
@@ -71093,7 +72368,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-628", 0 ],
+					"destination" : [ "obj-1196", 0 ],
 					"hidden" : 1,
 					"source" : [ "obj-638", 0 ]
 				}
@@ -73770,13 +75045,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-810", 0 ],
-					"source" : [ "obj-975", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-980", 0 ],
 					"source" : [ "obj-976", 0 ]
 				}
@@ -73994,6 +75262,12 @@
 			"obj-274" : [ "number[42]", "number[42]", 0 ],
 			"obj-277" : [ "number[41]", "number[41]", 0 ],
 			"obj-278" : [ "number[40]", "number[40]", 0 ],
+			"obj-280::obj-1015" : [ "toggle[24]", "toggle[24]", 0 ],
+			"obj-280::obj-1019" : [ "toggle[25]", "toggle[25]", 0 ],
+			"obj-280::obj-1022" : [ "toggle[26]", "toggle[26]", 0 ],
+			"obj-280::obj-151" : [ "multislider[31]", "multislider[3]", 0 ],
+			"obj-280::obj-840" : [ "dial", "dial", 0 ],
+			"obj-280::obj-842" : [ "toggle[20]", "toggle[20]", 0 ],
 			"obj-282" : [ "gain~[20]", "gain~[8]", 0 ],
 			"obj-284" : [ "button[10]", "button[10]", 0 ],
 			"obj-289" : [ "gain~[21]", "gain~", 0 ],
